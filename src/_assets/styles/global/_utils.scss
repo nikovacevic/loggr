@@ -1,0 +1,21 @@
+//
+// Utils
+//
+
+// color
+
+.text-hover-blue-grey:hover {
+  color: color('blue-grey', 'darken-3') !important;
+}
+
+.text-hover-grey:hover {
+  color: color('grey', 'lighten-2') !important;
+}
+
+.text-hover-red:hover {
+  color: color('red', 'darken-1') !important;
+}
+
+.text-hover-teal:hover {
+  color: color('teal', 'lighten-1') !important;
+}

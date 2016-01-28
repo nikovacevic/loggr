@@ -1,0 +1,115 @@
+//
+// Tables
+//
+
+$tableCellPadding: 15px 10px;
+
+// general table styles
+
+td,
+th {
+  border-radius: 0;
+  padding: $tableCellPadding;
+  white-space: nowrap;
+}
+
+td > a,
+td > span {
+  border-bottom: 1px dashed rgba(0, 0, 0, .05);
+  color: inherit;
+}
+
+td.stretch {
+  width: 99%;
+}
+
+// table sizes
+
+.picker__table td {
+  padding: 0;
+}
+
+// editable
+
+tr.editable {
+  cursor: pointer;
+}
+
+tr.editable > td {
+  padding: 0;
+}
+
+tr.is-editing > td {
+  background-color: color('blue-grey', 'base');
+  color: color('shades', 'white');
+}
+
+tr.editable .input,
+tr.editable .input:focus {
+  border-bottom: 0;
+  box-shadow: none;
+  height: auto;
+  padding: $tableCellPadding;
+}
+
+tr.editable .input[readonly] {
+  cursor: pointer;
+}
+
+// color key (project color)
+
+tr.has-color-key {
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
+// row actions (edit, delete)
+
+.row-actions {
+  text-align: center;
+}
+
+.row-actions .material-icons {
+  font-size: 1.4rem;
+}
+
+.row-actions > a {
+  color: color('grey', 'darken-2');
+  position: relative;
+  top: 2px;
+}
+
+.row-actions > a {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.row-actions > a:first-of-type {
+  margin-left: 10px;
+}
+
+.row-actions > a:last-of-type {
+  margin-right: 10px;
+}
+
+tr.is-editing .row-actions > a {
+  color: color('shades', 'white');
+}
+
+// input sizes
+
+$gridSizeUnit: 50px;
+$gridInputPadding: 20px;
+
+.editable .input--s1 { min-width: $gridSizeUnit + $gridInputPadding; }
+.editable .input--s2 { min-width: $gridSizeUnit * 2 + $gridInputPadding; }
+.editable .input--s3 { min-width: $gridSizeUnit * 3 + $gridInputPadding; }
+.editable .input--s4 { min-width: $gridSizeUnit * 4 + $gridInputPadding; }
+.editable .input--s5 { min-width: $gridSizeUnit * 5 + $gridInputPadding; }
+.editable .input--s6 { min-width: $gridSizeUnit * 6 + $gridInputPadding; }
+.editable .input--s7 { min-width: $gridSizeUnit * 7 + $gridInputPadding; }
+.editable .input--s8 { min-width: $gridSizeUnit * 8 + $gridInputPadding; }
+.editable .input--s9 { min-width: $gridSizeUnit * 9 + $gridInputPadding; }
+.editable .input--s10 { min-width: $gridSizeUnit * 10 + $gridInputPadding; }
+.editable .input--s11 { min-width: $gridSizeUnit * 11 + $gridInputPadding; }
+.editable .input--s12 { min-width: $gridSizeUnit * 12 + $gridInputPadding; }

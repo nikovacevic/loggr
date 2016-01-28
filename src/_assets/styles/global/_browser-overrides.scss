@@ -1,0 +1,11 @@
+//
+// Browser Overrides
+//
+
+*:focus {
+  outline: none;
+}
+
+a {
+  transition: $transition-base;
+}

@@ -1,0 +1,47 @@
+//
+// Pie Chart
+//
+
+$pieSize: 200px;
+
+.pie {
+  display: inline-block;
+  height: $pieSize;
+  margin: 20px;
+  position: relative;
+  width: $pieSize;
+}
+
+.pie-slice {
+  height: $pieSize;
+  left: $pieSize / 2;
+  overflow: hidden;
+  position: absolute;
+  transform-origin: left center;
+  width: $pieSize / 2;
+}
+
+.pie-slice--majority {
+  left: 0;
+  transform-origin: center center;
+  width: $pieSize;
+}
+
+.pie-slice-contents {
+  border-radius: ($pieSize / 2) 0 0 ($pieSize / 2);
+  content: '';
+  height: $pieSize;
+  left: -($pieSize / 2);
+  position: absolute;
+  transform-origin: right center;
+  width: $pieSize / 2;
+}
+
+.pie-slice--majority .pie-slice-contents {
+  left: 0;
+}
+
+.pie-slice-contents:nth-of-type(2) {
+  left: $pieSize / 2;
+  border-radius: 0 ($pieSize / 2) ($pieSize / 2) 0;
+}

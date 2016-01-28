@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# symlink all git hooks, make sure they're executable
+cd .git/hooks
+ln -s -f ../../.githooks/*
+chmod +x *
+
+echo "Git hooks symlinked in .git/hooks and initialized."

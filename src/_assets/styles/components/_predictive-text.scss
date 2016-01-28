@@ -1,0 +1,29 @@
+//
+// Predictive Text
+//
+
+.predictive-text {
+  position: relative;
+}
+
+.predictive-text > i {
+  bottom: 0;
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+// dropdown
+
+.dropdown-content {
+  left: 0;
+  opacity: 1;
+  top: 100%;
+  width: 100%;
+}
+
+.dropdown-content li > span {
+  background-color: color('shades', 'white');
+  cursor: default;
+}
